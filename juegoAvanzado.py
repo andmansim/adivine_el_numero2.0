@@ -6,26 +6,42 @@ game_levels = ["Game levels:" + "nivel_sencillo:" + str(nivel_sencillo), "nivel_
 print(game_levels)
 user = int(input("Choose one level for the game:"))
 
-
-
-    
-while user == 0:
+if user == 0:
     import random
     number = random.randint(0,100)
     print(number)
     print("Choose an integrer between 0 and 99")
-    intento_1
-    if intento_1 > 99:
-        print("Choose another number between 0 an 99")
-     else:
-         if intento_1 > numero:
-             print("Too far from the number, it's smaller. The number is between:" + "0 y" + str(intento_1))
-         else:
-            print("Too far from the number, it's bigger. The number is between:" + str(intento_1) + "y 99")
-    #intento_1 = int(input())
-#if intento_1 == numero:
-    #print("¡Congratulations!")
-    
+    intento_1 = int(input())
+    while intento_1 != number:
+        if intento_1 > 99:
+            print("Choose another number between 0 an 99")
+        else:
+            if intento_1 > number:
+                print("Too far from the number, it's smaller. The number is between:" + "0 y" + str(intento_1))
+            else:
+                print("Too far from the number, it's bigger. The number is between:" + str(intento_1) + "y 99")
+        intento_1 = int(input())
+    if intento_1 == number:
+        print("¡Congratulations!, you have completed level 0")
+
+if user == 1:
+    import random
+    number = random.randint(0,1000)
+    print(number)
+    print("Choose an integrer between 0 and 99")
+    intento_1 = int(input())
+    while intento_1 != number:
+        if intento_1 > 99:
+            print("Choose another number between 0 an 99")
+        else:
+            if intento_1 > number:
+                print("Too far from the number, it's smaller. The number is between:" + "0 y" + str(intento_1))
+            else:
+                print("Too far from the number, it's bigger. The number is between:" + str(intento_1) + "y 99")
+        intento_1 = int(input())
+    if intento_1 == number:
+        print("¡Congratulations!, you have completed level 0")
+
     
    # if user == 0:
     #    import random
